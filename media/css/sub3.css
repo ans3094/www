@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+#wrap{width: 100%; overflow: hidden; }
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+ 
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -70px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+.down span{display: block;
+   width: 70px;
+   height: 70px;
+   background: url(../images/carpet.png) 0 0 no-repeat;
+   margin: 15px auto 0;
+   position: relative;}
+   @keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#ccc;font-family: 'Bree Serif', serif;}
+      100% { transform:scale(1.1); opacity:0.8; color:#888;font-family: 'Bree Serif', serif;}
+   }	
+
+#content h3{font-family: 'Aladin', cursive;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   margin-top: -100px;
+   text-align: center;
+   font-size: 180px;
+   font-weight: normal;
+   color: #fbbd4d;
+   text-shadow: 5px 3px 0px rgba(0,0,0,.7);
+}
+#content{padding: 120px 0; background:rgba(0,0,0,.8);}
+#content .clip{width: 86%; margin: 0 7%; }
+#content h4{text-align: center; font-size: 60px; color: #fbbd4d; font-family: 'Bree Serif', serif; margin-bottom: 80px;}
+#content h5{margin-bottom: 30px;}
+#content .tag p{float: left; margin: 10px 20px 10px 0; font-size: 16px;
+background: #fbbd4d; border-radius: 3px; padding: 0 10px; color: #333;
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content h3{font-size: 150px; }
+}
+@media screen and (max-width:768px) {
+	#content h3{font-size: 120px;}
+   #content h4{font-size: 56px;}
+   .ost .clip_part{padding-bottom: 60px;}
+}
+@media screen and (max-width:640px) {
+	#content h3{font-size: 80px;}
+   #content h4{font-size: 50px;}
+   #content h5{font-size: 24px;}
+   .ost .clip_part{padding-bottom: 60px;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+

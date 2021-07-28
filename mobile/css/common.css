@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+body {
+ color:#333;
+ font-size:14px;
+ font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+table{border-collapse: collapse; width: 100%;}
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+
+/*헤드라인 폰트 연결*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; font-weigh:700 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; font-weigh: 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; font-weigh: 400 */
+
+/* 헤더공통 */
+#headerArea .menu_ham {
+    display: block;
+    float: right;
+
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+}
+#headerArea .menu_ham span {
+    width: 20px;
+    height: 4px;
+    background: #00abcd;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 26px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #00abcd;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #00abcd;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+    background: #00abcd;
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0,0,0,0);
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: all .3s;
+}
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s;
+}
+#headerArea .header_top{overflow: hidden;}
+#headerArea {height: 49px; width: 100%; background: #fff; border-bottom: 1px solid #ccc;
+position: fixed;z-index: 20; box-shadow: 0 0 8px #ccc;}
+#headerArea a {
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #333;}
+#headerArea .menu_btn{padding: 10px; display: block; float: right; font-size: 22px;}
+#headerArea .logo{margin-left: 10px; float: left;}
+#headerArea .logo a{width: 146px;
+    height: 27px;
+    background: url(../images/logox2.png) no-repeat;
+    background-size:cover;
+    text-indent: -9999px;
+    margin-top: 8%;
+    overflow: hidden;}
+/* 네비공통 */
+
+#gnb{position: absolute; width: 100%;  right:-100%; top:50px; opacity: 0; background: #fff;z-index:110 }
+#gnb .depth1{border-top: 1px solid #ccc;}
+/* #gnb .depth1>a{font-weight: bold; font-size: 20px;} */
+#gnb .depth1 ul li a{font-size: 16px;}
+#gnb .depth1 li:nth-of-type(1){border-top: 3px solid #00abcd;}
+#gnb li{ text-align:center;}
+#gnb li a{display: block; padding: 20px 0; } 
+#gnb li ul{ background:#f9f9f9; display: none}
+#gnb .last{border-bottom:1px solid #ccc}
+#gnb .sns{width: 350px; margin: 50px auto 0; text-align: center;}
+#gnb .sns li{float: left; }
+#gnb .sns i{font-size: 30px; color: #666;}
+#gnb .sns li a{display: block; padding: 20px 30px; }
+#gnb h3{font-weight: bold; font-size: 20px;}
+/* 푸터공통 */
+
+/* 상단이동 버튼 */
+.topMove{display:block; width: 45px;
+    height: 45px; background: #75ccdd; border-radius: 15px;
+    position: fixed; left:85%; 
+    bottom:180px; z-index: 10;}
+    .topMove i{font-size: 18px; color: #fff; display: block; text-align: center;
+    margin-top: 14px;}
+#footerArea{padding: 20px 0; background: #4c4c4c;}
+#footerArea ul{overflow: hidden; margin-bottom: 20px; }
+#footerArea li{position: relative; font-family: 'Nanum Gothic', sans-serif; width: 33.33%; float: left; text-align: center;}
+#footerArea li::after{content: ''; display: block; background: #fff; width: 1px; height: 10px; position: absolute; top: 5px; right:0;}
+#footerArea li:nth-last-of-type(1):after{display: none;}
+#footerArea a{color: #fff;}
+#footerArea p{font-family: 'Nanum Gothic', sans-serif; margin-bottom: 20px; text-align: center; color: #fff;}
+#footerArea p:nth-last-of-type(1){margin-bottom: 0;}
+    
+
+
+
+
+
+

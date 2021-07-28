@@ -1,0 +1,103 @@
+.clip{overflow: hidden}
+.subTitle {
+    position: relative;
+    padding-top: 10px;
+    font-size: 1.4em;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    color: #fff
+}
+
+.subTitle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width:100%;
+    height: 2px;
+    background: #fbbd4d;
+}
+
+.clip_part {
+    width:50%; float: left;
+    margin-bottom: 100px
+}
+
+.clip_part .contentArea {
+    position: relative;
+    width: 94%;
+    margin: 30px auto
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px
+}
+
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip_part .contentArea p {
+    color: #fff;
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.clip_part .playBnt {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    border-radius: 50%;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    transition: .5s;
+}
+
+.clip_part .playBnt::after{content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 24px solid transparent;
+    border-left: 36px solid #fbbd4d;
+    border-bottom: 24px solid transparent;
+    top: 25px;
+    left: 36px;}
+
+.clip_part .imgPart:hover .playBnt {
+    transform: rotate(360deg);
+}
+.clip_part .imgPart img{transition: .5s; }
+.clip_part .imgPart:hover img{opacity: .6;}
+
+
+@media screen and (max-width:786px) {
+    
+    .clip_part {
+    width:auto; float:none;}
+    
+}
+
+@media screen and (max-width:640px) {
+    .subTitle {
+        font-size: 1.5em
+    }
+}
+
+@media screen and (max-width:480px) {
+    .clip_part .playBnt {
+        width: 95px;
+        height: 95px;
+        margin: -48px 0 0 -48px
+    }
+    .clip_part .contentArea {
+        width: auto
+    }
+}

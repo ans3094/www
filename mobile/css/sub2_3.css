@@ -1,0 +1,20 @@
+.main{margin-top: 50px; background: url(../images/sub2/sub2mainx2.jpg) center no-repeat; background-size: cover; width: 100%; height: 150px;}
+#content h2{position: absolute; width: 100%; text-align: center; top: -140px; left: 0; color: #fff; font-family: 'Nanum Gothic', sans-serif; font-size: 24px; }
+#content{ padding: 0 5%; position: relative;}
+#content i{margin-right: 10px; font-size: 14px; color: #00abcd;}
+#content p{margin-bottom: 50px; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center;}
+#content p:nth-of-type(1){margin-top: 50px;}
+span{color: #00abcd;}
+#content .con1{position: relative;}
+#content h3{margin-bottom: 70px; text-align: center; font-weight: bold; font-size: 28px; font-family: 'Nanum Gothic', sans-serif;}
+#content h3::after{content: ''; background: #00abcd; border-radius: 2px; height: 4px; width: 40px; position: absolute; top: 50px; left: 50%; margin-left: -20px;}
+#content h3:nth-of-type(1):after{content: ''; background: #00abcd; border-radius: 2px; height: 4px; width: 40px; position: absolute; top: 50px; left: 50%; margin-left: -20px;}
+#content  table{border-top: 3px solid #c9c9c9;
+margin: 50px 0 50px 0; font-family: 'Nanum Gothic', sans-serif;}
+#content table .first{background: #f9f9f9; border-bottom: 1px solid #ccc;}
+#content table th{font-size: 18px; padding: 20px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#content table td{padding: 20px; text-align: center; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#content table .last{border-right: none;}
+#content .vision{position: relative;}
+#content .vision img{width: 100%;border-radius: 20px;}
+#content .vision p{line-height: 2em; font-size: 16px; margin-bottom: 50px; text-align: justify;}

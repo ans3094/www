@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+#wrap{width: 100%; overflow: hidden; }
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+ 
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -70px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+.down span{display: block;
+   width: 70px;
+   height: 70px;
+   background: url(../images/carpet.png) 0 0 no-repeat;
+   margin: 15px auto 0;
+   position: relative;}
+   @keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#ccc;font-family: 'Bree Serif', serif;}
+      100% { transform:scale(1.1); opacity:0.8; color:#888;font-family: 'Bree Serif', serif;}
+   }	
+   #content h3{font-family: 'Aladin', cursive;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -100px;
+      text-align: center;
+      font-size: 180px;
+      font-weight: normal;
+      color: #fbbd4d;
+      text-shadow: 5px 3px 0px rgba(0,0,0,.7);
+   }
+  
+#content{padding: 120px 0; background:rgba(0,0,0,.8);}
+#content section{width: 100%; overflow: hidden;}
+#content h4{text-align: center; font-size: 60px; color: #fbbd4d; font-family: 'Bree Serif', serif; margin-bottom: 80px;}
+#content .con_1992{width: 90%; margin: 0 5%;}
+#content .con_1992>p{text-align: center; margin-bottom: 60px;}
+#content .con_1992 .story_img{overflow: hidden; margin-bottom: 120px;}
+#content .con_1992 .story_img li:nth-of-type(1){width: 49%;  margin-right: 1%; height: 300px;  float: left;
+   background: #fbbd4d;
+   transition: .3s;
+   box-sizing: border-box;
+   position: relative;}
+#content .con_1992 .story_img li:nth-of-type(1):hover{padding: 12px; }
+#content .con_1992 .story_img2 ul li:hover{padding: 12px; }
+#content .con_1992 .story_img li:nth-of-type(1)>div{ width: 100%;  height: 100%; background: url(../images/sub1/media_sub1_18.jpg)left no-repeat; background-size: cover;}
+#content .con_1992 .story_img2{overflow: hidden; width: 50%;  float: right;}
+#content .con_1992 .story_img2 ul{position: relative; overflow: hidden;}
+#content .con_1992 .story_img2 ul li:nth-of-type(1){float: left; width: 49%; margin-right: 1%;}
+#content .con_1992 .story_img2 ul .last{float: right; width: 50%;}
+#content .con_1992 .story_img2 ul li{  background: #fbbd4d;
+   transition: .3s;
+   box-sizing: border-box;
+   position: relative;float: left; width: 49%; height: 300px;}
+#content .con_1992 .story_img2 ul li:nth-of-type(1)>div{width: 100%; height: 100%; background: url(../images/sub1/media_sub1_23.jpg)center no-repeat; background-size: cover; }
+#content .con_1992 .story_img2 ul .last>div{width: 100%; height: 100%;  background: url(../images/sub1/media_sub1_27.jpg)center no-repeat; background-size: cover; }
+
+#content .sentance{height: 300px;
+   background: url(../images/sub1/sub1back.jpg) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   overflow: hidden;
+   margin-bottom: 120px;}
+#content .sentance>p{text-align: center; margin-top: 115px; font-size: 50px;
+font-family: 'Aladin', cursive; text-shadow: 5px 3px 0px rgb(0 0 0 / 70%);}
+#content .con_2019{width: 90%; margin: 0 5%;}
+#content .con_2019 .gif{width: 100%; overflow: hidden; }
+#content .con_2019 .gif img{transition: .5s; }
+#content .con_2019 .gif img:hover{filter: sepia(50%);  }
+#content .con_2019 .gif img:nth-of-type(1){width: 49%; margin-right: 1%; float: left;}
+#content .con_2019 .gif img:nth-of-type(2){width: 50%;float: right;}
+#content .con_2019 p:nth-of-type(1){line-height: 2em; color: #fbbd4d; margin: 60px 0 120px 0; text-align: center; font-size: 24px;}
+#content .con_2019 div{width: 100%;}
+#content .con_2019 .odd img{float: left; width: 48%; margin-right: 2%; border-radius:30px;}
+#content .con_2019 .odd {overflow: hidden; margin-bottom: 60px; }
+#content .con_2019 .odd dl{padding-top: 30px; float: right; width: 48%; margin-left: 2%;}
+#content .con_2019 .odd dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 36px; margin-bottom: 30px;}
+#content .con_2019 .odd dd{text-align: justify; line-height: 2em; font-size: 20px;}
+#content .con_2019 .even img{float: right; width: 48%; margin-left: 2%; border-radius: 30px;}
+#content .con_2019 .even {overflow: hidden;  margin-bottom: 60px;}
+#content .con_2019 .even dl{padding-top: 30px; float: left; width: 48%; margin-right: 2%;}
+#content .con_2019 .even dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 36px; margin-bottom: 30px;}
+#content .con_2019 .even dd{text-align: justify; line-height: 2em; font-size: 20px;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+#content .con_2019 .odd dl{padding-top: 0px; float: right; width: 48%; margin-left: 2%;}
+#content .con_2019 .even dl{padding-top: 0px; float: left; width: 48%; margin-right: 2%;}
+#content .con_2019 .odd dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 30px; margin-bottom: 20px;}
+#content .con_2019 .odd dd{text-align: justify; line-height: 1.6em; font-size: 18px;}
+#content .con_2019 .even img{float: right; width: 48%; margin-left: 2%; border-radius: 50px 0;}
+#content .con_2019 .even {overflow: hidden;  margin-bottom: 60px;}
+#content .con_2019 .even dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 30px; margin-bottom: 20px;}
+#content .con_2019 .even dd{text-align: justify; line-height: 1.6em; font-size: 18px;}
+}
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	
+   #content h3{  font-size: 150px;   }
+   #content .con_1992 p{line-height: 1.5em; font-size: 16px;}
+   #content .con_2019 p:nth-of-type(1){line-height: 1.6em; color: #fbbd4d; margin: 60px 0 120px 0; text-align: center; font-size: 20px;}
+   #content .con_2019 .odd dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 24px; margin-bottom: 20px;}
+   #content .con_2019 .odd dd{text-align: justify; line-height: 1.5em; font-size: 16px;}
+   #content .con_2019 .even img{float: right; width: 48%; margin-left: 2%; border-radius: 50px 0;}
+   #content .con_2019 .even {overflow: hidden;  margin-bottom: 60px;}
+   #content .con_2019 .even dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 24px; margin-bottom: 20px;}
+   #content .con_2019 .even dd{text-align: justify; line-height: 1.5em; font-size: 16px;}
+}
+@media screen and (max-width:768px) {
+	#content h3{ font-size: 120px;}
+   #content h4{font-size: 56px;}
+   #content .con_1992 img{width: 100%; margin-bottom: 60px; background: url(../images/sub1/media_sub1_06.jpg);
+   background-size: cover; height: 250px;}
+   #content .con_1992 p{width: 100%;}
+   #content .con_1992 .story_img2 ul li:nth-of-type(1){float: left; width: 100%;}
+   #content .con_1992 .story_img2 ul .last{display: none;}
+   #content .sentance{height: 250px;}
+   #content .sentance>p{text-align: center; margin-top: 100px; font-size: 38px;}
+      #content .con_2019 .odd dl{width: 100%; margin-bottom: 60px;}
+      #content .con_2019 .even dl{width: 100%;margin-bottom: 60px;}
+      #content .con_2019 .odd img{width: 100%; margin-bottom: 60px;}
+      #content .con_2019 .odd dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 28px; margin-bottom: 20px;}
+      #content .con_2019 .odd dd{text-align: justify; line-height: 1.5em; font-size: 16px;}
+      #content .con_2019 .even img{width: 100%; margin-bottom: 60px;}
+      #content .con_2019 .odd {margin-bottom: 60px;}
+      #content .con_2019 .even {margin-bottom: 60px;}
+      #content .con_2019 .even dt{text-align: center; font-family: 'Bree Serif', serif; color: #fbbd4d; font-size: 28px; margin-bottom: 20px;}
+      #content .con_2019 .even dd{text-align: justify; line-height: 1.5em; font-size: 16px;}
+      #content .con_2019 .gif img:nth-of-type(1){width: 100%;}
+      #content .con_2019 .gif img:nth-of-type(2){display: none;}
+   }
+@media screen and (max-width:640px) {
+   #content h3{font-size: 80px; }
+   #content h4{font-size: 50px;}
+   #content .con_1992 .story_img2 ul li:nth-of-type(1){display: none;}
+   #content .con_1992 .story_img li:nth-of-type(1){width: 100%; }
+   #content .sentance>p{text-align: center; margin-top: 110px; font-size: 24px;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+#wrap{width: 100%; overflow: hidden; }
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+ 
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -70px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+.down span{display: block;
+   width: 70px;
+   height: 70px;
+   background: url(../images/carpet.png) 0 0 no-repeat;
+   margin: 15px auto 0;
+   position: relative;}
+   @keyframes ani {
+      0% { transform:scale(1); opacity:1; color:#ccc;font-family: 'Bree Serif', serif;}
+      100% { transform:scale(1.1); opacity:0.8; color:#888;font-family: 'Bree Serif', serif;}
+   }	
+  
+/* #content h3{font-family: 'Aladin', cursive;
+      position: absolute;
+      top: -700px;
+      left: 50%;
+      margin-left: -270px;
+      font-size: 180px;
+      font-weight: normal;
+      color: #fbbd4d;
+      text-shadow: 5px 3px 0px rgba(0,0,0,.7);
+   } */
+   #content h3{font-family: 'Aladin', cursive;
+      position: absolute;
+      top: 50%;
+      right: 10%;
+     margin-top: -100px;
+      font-size: 180px;
+      font-weight: normal;
+      color: #fbbd4d;
+      text-shadow: 5px 3px 0px rgba(0,0,0,.7);
+   }
+ 
+#content{padding: 120px 0; background:rgba(0,0,0,.8);}
+#content section{width: 90%; margin: 0 5%;overflow: hidden;}
+#content .aladdin{margin-bottom: 120px;}
+#content .aladdin>div{width: 100%; position: relative;}
+#content .aladdin dl{ width: 60%;}
+#content .aladdin>div>img{transition: 1s; position: absolute; top: 0; right: -500px; z-index: 10;}
+#content .aladdin dl dt{margin-left: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 100px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .aladdin dl dd{font-size: 20px; line-height: 1.6em; margin-bottom: 100px;}
+#content .aladdin ul{width: 100%; overflow: hidden;}
+#content .aladdin ul li{float: left;}
+#content .aladdin ul li:nth-of-type(1){background: url(../images/sub2/media_sub2_48.jpg) center no-repeat;
+background-size: cover; height: 300px;width: 32%; margin-right: 1%;}
+#content .aladdin ul li:nth-of-type(2){background: url(../images/sub2/media_sub2_51.jpg) center no-repeat;
+background-size: cover; height: 300px; width: 32%; margin-right: 1%;}
+#content .aladdin ul li:nth-of-type(3){background: url(../images/sub2/media_sub2_55.jpg) center no-repeat;
+background-size: cover; height: 300px; width: 33%;}
+
+#content .jasmine{margin-bottom: 120px;}
+#content .jasmine>div{width: 100%; position: relative;}
+#content .jasmine dl{ width: 60%; float: right;}
+#content .jasmine>div>img{transition: 1s; position: absolute; top: 0; right: 95%; z-index: 10;}
+#content .jasmine dl dt{text-align: right; margin-right: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 100px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .jasmine dl dd{text-align: right; font-size: 20px; line-height: 1.6em; margin-bottom: 100px;}
+#content .jasmine ul{width: 100%; overflow: hidden;}
+#content .jasmine ul li{float: left;}
+#content .jasmine ul li:nth-of-type(1){background: url(../images/sub2/media_sub2_56.jpg) center no-repeat;
+background-size: cover; height: 300px;width: 32%; margin-right: 1%;}
+#content .jasmine ul li:nth-of-type(2){background: url(../images/sub2/gif4.gif) center no-repeat;
+background-size: cover; height: 300px; width: 32%; margin-right: 1%;}
+#content .jasmine ul li:nth-of-type(3){background: url(../images/sub2/media_sub2_57.jpg) center no-repeat;
+background-size: cover; height: 300px; width: 33%;}
+
+#content .genie{margin-bottom: 120px;}
+#content .genie>div{width: 100%; position: relative;}
+#content .genie dl{ width: 60%;}
+#content .genie>div>img{transition: 1s;position: absolute; top: 0; right: 5%; z-index: 10;}
+#content .genie dl dt{margin-left: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 100px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .genie dl dd{font-size: 20px; line-height: 1.6em; margin-bottom: 100px;}
+#content .genie ul{width: 100%; overflow: hidden;}
+#content .genie ul li{float: left;}
+#content .genie ul li:nth-of-type(1){background: url(../images/sub2/media_sub2_58.jpg) center no-repeat;
+background-size: cover; height: 300px;width: 32%; margin-right: 1%;}
+#content .genie ul li:nth-of-type(2){background: url(../images/sub2/gif5.gif) center no-repeat;
+background-size: cover; height: 300px; width: 32%; margin-right: 1%;}
+#content .genie ul li:nth-of-type(3){background: url(../images/sub2/media_sub2_59.jpg) center no-repeat;
+background-size: cover; height: 300px; width: 33%;}
+
+#content .jafar_dalia{width: 100%; overflow: hidden; margin-bottom: 150px;}
+#content .jafar,.dalia{width: 49%; margin-right: 1%; overflow: hidden;}
+#content .jafar dt,.dalia dt{margin-left: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 100px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .jafar dd,.dalia dd{font-size: 20px; line-height: 1.6em; }
+#content .jafar{float: left;}
+#content .dalia{float: right;}
+#content .jafar img,.dalia img{width: 30%;float: right; margin-top: 30px;}
+#content .jafar dl,.dalia dl{width: 65%; margin-right: 5%; float: left;}
+
+
+
+/* @media screen and (max-width:1280px) {
+   #content h3{font-size: 120px;}
+} */
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content h3{font-size: 120px;right: 0;width: 100%; text-align: center;}
+   #content .jafar dt,.dalia dt{margin-left: 0px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 60px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .jafar dd,.dalia dd{font-size: 20px; line-height: 1.6em; }
+#content .jafar{float: left;}
+#content .dalia{float: right;}
+#content .jafar img,.dalia img{width: 40%;float: right; margin-top: 30px;}
+#content .jafar dl,.dalia dl{width: 55%; margin-right: 5%; float: left;}
+}
+@media screen and (max-width:768px) {
+   #content h3{ font-size: 80px;}
+   #content h4{font-size: 56px;}
+   #content .aladdin dl dt{font-size: 50px; color: #fbbd4d;}
+   #content .aladdin dl dd{font-size: 18px; line-height: 1.5em; margin-bottom: 100px;}
+   #content .jasmine dl dt{font-size: 50px; color: #fbbd4d;}
+   #content .jasmine dl dd{font-size: 18px; line-height: 1.5em; margin-bottom: 100px;}
+   #content .genie dl dt{font-size: 50px; color: #fbbd4d;}
+   #content .genie dl dd{font-size: 18px; line-height: 1.5em; margin-bottom: 100px;}
+   
+   #content .jasmine>div>img{transition: 1s; position: absolute; top: 0;left: 20px; z-index: 10;}
+   #content .jafar_dalia{width: 100%; overflow: hidden; margin-bottom: 150px;}
+   #content .jafar,.dalia{width: 49%; margin-right: 1%; overflow: hidden;}
+   #content .jafar dt,.dalia dt{margin-left: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 50px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+   #content .jafar dd,.dalia dd{font-size: 18px; line-height: 1.5em; }
+   #content .jafar{float: left;}
+   #content .dalia{float: right;}
+   #content .jafar img,.dalia img{display: none;}
+   #content .jafar dl,.dalia dl{width: 98%; margin-right: 2%; float: left;}
+   #content .aladdin>div>img{display: none;}
+   #content .jasmine>div>img{display: none;}
+   #content .genie>div>img{display: none;}
+   #content .genie dl{ width: 100%;}
+   #content .jasmine dl{ width: 100%; float: none; }
+   #content .aladdin dl{ width: 100%;}
+   #content .aladdin ul li:nth-of-type(1){background: url(../images/sub2/media_sub2_48.jpg) center no-repeat;
+      background-size: cover; height: 300px;width: 49%; margin-right: 1%;}
+      #content .aladdin ul li:nth-of-type(2){background: url(../images/sub2/media_sub2_51.jpg) center no-repeat;
+      background-size: cover; height: 300px; width: 50%; margin-right: 0%;}
+   #content .aladdin ul li:nth-of-type(3){display: none;}
+}
+@media screen and (max-width:640px) {
+   #content h3{font-size: 60px; }
+   #content h4{font-size: 50px;}
+#content .aladdin dl dt{text-align: center; margin-left: 0px;  font-size: 50px; }
+#content .aladdin dl dd{text-align: justify; font-size: 16px; line-height: 1.5em; margin-bottom: 100px;}
+#content .aladdin ul li:nth-of-type(1){display: none;}
+#content .aladdin ul li:nth-of-type(2){background: url(../images/sub2/media_sub2_51.jpg) center no-repeat;
+background-size: cover; height: 300px; width: 100%; margin-right: 1%;}
+
+#content .jasmine{margin-bottom: 120px;}
+#content .jasmine dl dt{text-align: center; margin-right: 0px; font-size: 50px;}
+#content .jasmine dl dd{text-align:justify; font-size: 16px; line-height: 1.5em; margin-bottom: 100px;}
+#content .jasmine ul li:nth-of-type(1){display: none;}
+#content .jasmine ul li:nth-of-type(2){background: url(../images/sub2/gif4.gif) center no-repeat;
+background-size: cover; height: 300px; width: 100%; margin-right: 1%;}
+#content .jasmine ul li:nth-of-type(3){display: none;}
+
+#content .genie dl dt{text-align: center; margin-left: 0px;  font-size: 50px;}
+#content .genie dl dd{text-align: justify; font-size: 16px; line-height: 1.5em; margin-bottom: 100px;}
+#content .genie ul{width: 100%; overflow: hidden;}
+#content .genie ul li{float: left;}
+#content .genie ul li:nth-of-type(1){display: none;}
+#content .genie ul li:nth-of-type(2){background: url(../images/sub2/gif5.gif) center no-repeat;
+background-size: cover; height: 300px; width: 100%; margin-right: 1%;}
+#content .genie ul li:nth-of-type(3){display: none;}
+#content .jafar_dalia{width: 100%; overflow: hidden; margin-bottom: 120px;}
+#content .jafar,.dalia{width: 49%; margin-right: 1%; overflow: hidden;}
+#content .jafar dt,.dalia dt{margin-left: 20px; text-shadow: rgb(251 189 77 / 70%) 1px 0 20px; font-size: 100px; color: #fbbd4d; font-family: 'Aladin', cursive; margin-bottom: 60px;}
+#content .jafar dd,.dalia dd{font-size: 20px; line-height: 1.6em; }
+#content .jafar{float: left;}
+#content .dalia{float: right;}
+
+#content .jafar,.dalia{width: 100%; overflow: hidden;}
+   #content .jafar dt,.dalia dt{text-align: center; margin-left: 00px;  font-size: 50px; }
+   #content .jafar dd,.dalia dd{font-size: 16px; line-height: 1.5em; }
+   #content .jafar{float: none;}
+   #content .dalia{float: none;}
+   #content .jafar dl,.dalia dl{width: 100%; margin-right: 0%; float: none;}
+   #content .jafar dd,.dalia dd{text-align: justify;}
+   #content .jafar dl{margin-bottom: 60px;}
+
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

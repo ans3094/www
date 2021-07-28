@@ -1,0 +1,19 @@
+
+.main{margin-top: 50px; background: url(../images/sub1/sub1mainx2.jpg) center no-repeat; background-size: cover; width: 100%; height: 150px;}
+#content h2{position: absolute; width: 100%; text-align: center; top: -140px; left: 0; color: #fff; font-family: 'Nanum Gothic', sans-serif; font-size: 24px; }
+#map{margin-bottom: 50px; width: 100%; height: 300px;  border: 3px solid #ccc;}
+#content{ padding: 0 5%; position: relative;}
+#content i{margin-right: 10px; font-size: 14px; color: #00abcd;}
+#content p{margin-bottom: 50px; font-family: 'Nanum Gothic', sans-serif; font-size: 16px; text-align: center;}
+#content p:nth-of-type(1){font-size: 18px; margin-top: 50px;}
+#content .add{margin-bottom: 50px; padding: 50px 20px; position: relative; background: rgba(0, 171, 205, .2);}
+#content h3{margin-bottom: 70px; text-align: center; font-weight: bold; font-size: 28px; font-family: 'Nanum Gothic', sans-serif;}
+#content h3::after{content: ''; background: #00abcd; border-radius: 2px; height: 4px; width: 40px; position: absolute; top: 100px; left: 50%; margin-left: -20px;}
+#content .add dl{font-size: 16px; padding: 30px 10px; text-align: center; font-family: 'Nanum Gothic', sans-serif; background: #fff;}
+#content .add dt{font-size: 18px; padding-top: 20px; margin-bottom: 20px ; border-top: 1px dashed #ccc; }
+#content .add dt:nth-of-type(1){padding-top: 0; border: none;}
+#content .add dd{margin-bottom: 20px;}
+#content .add .green{background: #32ae56; padding: 0 5px; border-radius: 5px; color: #fff;}
+#content .add .blue{background: #345bba; padding: 0 5px; border-radius: 5px; color: #fff;}
+
+
