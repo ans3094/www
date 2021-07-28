@@ -1,0 +1,76 @@
+{
+    "rewards": [
+      {
+        "image": "./images/content3/updated.png",
+        "title": "Work & Life Balance",
+        "text1": "· 월 1회 캐쥬얼 데이 및 조기퇴근",
+        "text2": "· 유연근무, 육아기 근로시간 단축 등"
+      },
+      {
+        "image": "./images/content3/hospital.png",
+        "title": "의료비 및 단체보험",
+        "text1": "· 년간 100만원 한도의 본인입원의료비 지원",
+        "text2": "· 중증질환에 대한 직원 및 배우자 보험가입"
+      },
+      {
+        "image": "./images/content3/stethoscope.png",
+        "title": "건강검진",
+        "text1": "· 사무직 2년에 한 번, 비사무직 매 년",
+        "text2": "· 만 45세 이상 대상자는 30만원 추가 검진 지원"
+      },
+      {
+        "image": "./images/content3/healthcare.png",
+        "title": "건강한 일터 만들기",
+        "text1": "· 매 월 간이검사(당뇨, 콜레스테롤, 혈압)실시",
+        "text2": "· 격 월 근골격계관련 통증완화 위한 테이핑 치료 실시"
+      },
+      {
+        "image": "./images/content3/brother.png",
+        "title": "자녀 학자금 지원",
+        "text1": "· 고등학교 및 대학교 학자금",
+        "text2": "· 약학대학, 의과대학의 경우 1인당 12학기까지 지원"
+      },
+      {
+        "image": "./images/content3/new-product.png",
+        "title": "경조사 지원",
+        "text1": "· 사내 공제회를 통해 경조사 지원",
+        "text2": "· 경조금 및 경조물품 지원"
+      },
+      {
+        "image": "./images/content3/coffee-cup.png",
+        "title": "사내카페 운영",
+        "text1": "· 저렴한 가격, 높은 품질의 F&B",
+        "text2": "· 오픈형 공간에서 소통의 장 제공"
+      },
+      {
+        "image": "./images/content3/updated.png",
+        "title": "Work & Life Balance",
+        "text1": "· 월 1회 캐쥬얼 데이 및 조기퇴근",
+        "text2": "· 유연근무, 육아기 근로시간 단축 등"
+      },
+      {
+        "image": "./images/content3/hand-gesture.png",
+        "title": "임징원 복지몰 운영",
+        "text1": "· 설, 추석, 근로자의 날 포인트 지급",
+        "text2": "· 카페테리아형 복지몰 운영"
+      },
+      {
+        "image": "./images/content3/book.png",
+        "title": "자기개발 지원",
+        "text1": "· 사내 외국어 강사, 사이버 강좌 지원",
+        "text2": "· 사내 및 사외교육 지원"
+      },
+      {
+        "image": "./images/content3/luggage.png",
+        "title": "휴가제도",
+        "text1": "· 최소 22일의 유급 연차휴가 운영 (타사 15일)",
+        "text2": "· 휴가비 지원"
+      },
+      {
+        "image": "./images/content3/personal.png",
+        "title": "사내대출",
+        "text1": "· 연2%의 금리로 전세 및 생활안정자금 일부 대출",
+        "text2": "· 최장 36개월 원리금 분할상환"
+      }
+    ]
+  }

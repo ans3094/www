@@ -1,0 +1,23 @@
+#content .content_area{position: relative;}
+#content .content_area p{font-size: 26px; font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 100px; text-align: center; line-height: 1.5em;}
+#content .content_area span{color: #00abcd;}
+#content .content_area h3{margin-bottom: 100px; margin-left: 20px; font-family: 'Nanum Gothic', sans-serif; font-size: 36px; color: #333;}
+#content .content_area h3::before{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+    position: absolute; top: 145px; left: 0;}
+#content .content_area table{width: 1200px; border-top: 3px solid #c9c9c9;
+margin: 100px 0 110px 0; font-family: 'Nanum Gothic', sans-serif;}
+#content .content_area table .first{background: #f9f9f9; border-bottom: 1px solid #ccc;}
+#content .content_area table th{font-size: 20px; padding: 20px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#content .content_area table td{padding: 20px; text-align: center; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#content .content_area table .last{border-right: none;}
+#content .content_area .vision{position: relative;}
+#content .content_area .vision .title2::before{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+    position: absolute; top: 7px; left: 0;}
+#content .content_area .vision p{font-size: 16px; margin-bottom: 50px; text-align: justify;}
+#content .content_area .vision .last{margin-bottom: 150px;}
+#content .content_area .vision .fiximg{margin: 100px 0; height: 250px; width: 1200px;
+background: url(../images/content3/world.png) no-repeat; 
+border-radius: 50px; background-attachment: fixed; z-index: -1;}
+#content .content_area .vision .bulb{width: 230px; height: 230px; position: absolute;
+top: 165px; left: 495px;}

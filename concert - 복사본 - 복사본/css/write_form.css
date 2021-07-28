@@ -1,0 +1,28 @@
+#write_form{margin-bottom: 40px;}
+
+#write_row1{border-bottom: 1px solid #ccc; border-top: 2px solid #00abcd; overflow: hidden;font-family: 'Nanum Gothic', sans-serif; font-size: 18px;}
+#write_row1 div{float: left;}
+#write_row1 .col1{text-align: center;width: 100px; margin-right: 20px; padding: 20px;}
+#write_row1 .col3{float: right;padding: 20px;}
+#write_row1 .col2{padding: 20px;}
+#write_row2{overflow: hidden;border-bottom: 1px solid #ccc; }
+#write_row2 .col1{text-align: center; width: 100px;font-family: 'Nanum Gothic', sans-serif; font-size: 18px;margin-right: 20px; padding: 20px;  }
+#write_row2 div{float: left;}
+#write_row2 .col2 input{outline: none; border: none;margin-top: 15px; background: #f7f7f7; width: 1000px; padding: 10px;}
+#write_row3{overflow: hidden;border-bottom: 1px solid #ccc; }
+#write_row3 .col1{text-align: center;width: 100px;font-family: 'Nanum Gothic', sans-serif; font-size: 18px;margin-right: 20px; padding: 20px; }
+#write_row3 div{float: left;}
+#write_row3 .col2 textarea{outline: none; border: none;margin: 15px 0; background: #f7f7f7; width: 1000px; padding: 10px;}
+
+#write_button{float: right; margin-bottom: 150px;}
+#write_button input{outline: none; border: none; font-size: 16px; background: #999; cursor: pointer; padding: 10px 20px;
+color: #fff; margin-right: 20px;width: 75px; font-family: 'Nanum Gothic', sans-serif; }
+#write_button a{outline: none; border: none; background: #00abcd; padding: 10px 20px;
+    color: #fff;width: 75px;font-family: 'Nanum Gothic', sans-serif; }
+
+
+
+
+
+
+

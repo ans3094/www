@@ -1,0 +1,54 @@
+#content{width: 800px; margin: 0 auto; margin-bottom: 100px;  margin-top: 60px;  }
+
+h1{margin-top: 50px; padding-bottom: 60px; position: relative;}
+h1::after{content: ''; width: 1000px; height: 5px; border-radius: 1px; background: #00abcd; position: absolute;
+    bottom: 0; left: 50%; margin-left: -500px;}
+h2{font-family: 'Nanum Gothic', sans-serif; text-align: center; margin: 50px 0; font-size: 24px; }
+.logo{display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 120px;
+background: url(../images/logo.png) no-repeat;
+background-size: cover;
+text-indent: -999px;
+overflow: hidden;}
+#id_pw_input {text-align: center;}
+#id_pw_input ul{list-style: none; margin: 0 auto;}
+
+#id_pw_input ul li .login_input{
+    outline: 0;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-right: 40px;
+    width: 500px;
+    border: none;
+    background: #f4f4f4;
+}
+body>p{font-size: 14px; margin-bottom: 20px; text-align: center;}
+#login_button button{cursor: pointer; width: 520px;
+    border: none; transition: .1s;
+    background: #00abcd; color: #fff; height: 50px; margin: 0 auto; display: block;}
+    #login_button button:hover{background: #fff; border: 1px solid #00abcd; box-sizing: border-box;  color: #333;}
+#join_button{text-align: center; margin: 30px auto;
+    width: 520px;
+    border-top: 1px dashed;}
+    #join_button p{margin-top: 20px;}
+#join_button a{text-decoration: none;
+    color: #666; display: block; margin-top: 20px;
+    font-size: 16px; transition: all .2s;
+    font-weight: 700; background: #f4f4f4;padding: 10px 20px; border-radius: 5px;}
+    #join_button a:hover{background: #ccc; color: #fff;}
+.find { overflow: hidden; text-align: center; list-style: none; padding: 0;}
+.find li{width: 520px; margin: 0 auto;}
+.find a{transition: all .2s; border-radius: 5px; float: left; text-decoration: none; color: #666; border: 1px solid #00abcd; background: #fff;
+padding: 10px 20px; display: block; width: 210px;}
+.find a:nth-of-type(1){margin-right: 15px;}
+.find li a:hover{background: #f4f4f4; border:1px solid #f4f4f4;}
+
+
+
+
+
+

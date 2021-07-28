@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 16px;
+  color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+.hidden{display: block; position: absolute;
+ left: -1000%; width: 1px; height: 1px;
+  overflow: hidden; color: #fff}
+
+/*헤드라인 폰트 연결*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; font-weigh:700 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; font-weigh: 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; font-weigh: 400 */
+
+/*스킵네비게이션*/
+#skipNav{position:relative;width:100%;overflow:hidden; z-index: 10;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px;
+      overflow:hidden; text-align:center; text-decoration:none; color:#333; font-size:16px;}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{
+     display:block;height:auto;padding:10px 0; background:#f2f2f2;}
+
+
+/*헤더공통영역 */
+.wrap{width: 100%; overflow: hidden;}
+#headerArea{position: fixed; width: 100%; background: #fff; z-index: 200;}
+#headerArea{overflow: hidden; height: 130px; border-bottom: 1px solid #999; box-shadow: 0 0 10px #999;}
+#headerArea .header_inner{width: 1200px; margin: 0 auto;}
+#headerArea .header_bottom{}
+#headerArea .top_menu{}
+#headerArea .top_menu ul{    margin: 15px 20px 0 1045px;
+  overflow: hidden;}
+#headerArea .top_menu li{float: left; margin-right: 22px; font-family: 'Nanum Gothic', sans-serif;
+font-weight: 400; color: #666; position: relative; font-size: 14px;}
+#headerArea .top_menu .last{margin-right: 0;}
+#headerArea .top_menu li::after{content: ''; display: block; width: 1px; height:14px; 
+  background: #999; position: absolute; right: -12px; top: 3px;}
+#headerArea .top_menu .last::after{display: none;}
+#headerArea .logo{width: 200px; float: left; margin: 21px 0 38px 0}
+#headerArea .logo a{display: block; width: 200px; height: 37px;
+background: url(../images/indexlogo.jpg); text-indent: -999px; overflow: hidden;}
+
+
+#headerArea #gnb{float: right; width: 950px;} 
+
+/*gnb*/
+  #gnb ul.dropdownmenu{width: 100%; float:left; position: relative;}
+  #gnb ul.dropdownmenu .m1 menu{padding-left: 50px;}
+	#gnb ul.dropdownmenu li.menu{position:relative; float:left;
+		width:16.66%; height: 100px; }
+	#gnb ul.dropdownmenu li h3{font-family: 'Nanum Gothic', sans-serif; font-size: 20px;
+  font-weight: bold; text-align: center;}
+	
+	#gnb ul.dropdownmenu li a.depth1{display:block;padding: 30px 0px;
+	text-align: center; transition: all .5s;}
+	
+  #gnb .dropdownmenu .menu::after {
+    content: ""; display: block; width:0; 
+    background: #00abcd; height: 3px; position: absolute; bottom: 20px; left: 50%; transition: all .5s;
+}
+
+#gnb .dropdownmenu .menu:hover::after {
+  display: block; width: 100%; left: 0;}
+  
+
+    /* 2depth */
+	#gnb ul.dropdownmenu li ul{width:100%;height:150px;position:absolute;
+		top:50px;left:0;padding:40px 0;line-height:2.5em; display: none;}
+	
+	#gnb ul.dropdownmenu li ul li{ text-align:center; font-weight:400;}
+	#gnb ul.dropdownmenu li ul li a{display: block; font-family: 'Nanum Gothic', sans-serif; color:#666; transition: all .5s;}
+	#gnb ul.dropdownmenu li ul li a:hover{ color: #333; background: #f6f6f6; border-radius:5px ;
+	font-family: 'Nanum Gothic', sans-serif;}
+
+
+/*푸터공통영역*/
+#footerArea{height: 195px; background: #4c4c4c; clear: both;}
+#footerArea .footer_inner{width: 1200px; margin: 0 auto;}
+#footerArea .footer_logo{width: 145px; float: left; margin-top: 39px; margin-bottom: 40px;}
+#footerArea .footer_menu{width: 814px; float: left;}
+#footerArea .footer_menu ul{overflow: hidden; margin: 40px 0 20px 150px;}
+#footerArea .footer_menu ul a{color: #ccc;}
+#footerArea .footer_menu li{float: left; margin-right: 35px; position: relative;}
+#footerArea .footer_menu li::after{content: ''; display: block; width: 1px; height:14px; 
+  background: #ccc; position: absolute; top: 2px; right: -17px;}
+#footerArea .footer_menu .last{margin-right: 0;}
+#footerArea .footer_menu .last::after{display: none;}
+#footerArea .footer_menu address{line-height: 2.5em; margin-left: 150px;
+color: #ccc;}
+#footerArea .footer_menu p{line-height: 2.5em; margin-left: 150px;
+  color: #ccc;}
+
+
+#footerArea .footer_right{width: 241px; float: right; }
+/* #footerArea .family_brand{width: 241px;} */
+
+#footerArea .footer_sns{width: 241px;}
+#footerArea .footer_sns ul{overflow: hidden; margin-left: 15px;}
+#footerArea .footer_sns li{float: left; margin-right: 40px;}
+#footerArea .footer_sns .fab{color: #ccc; font-size: 20px;}
+#footerArea .footer_sns .last{margin-right: 0;}
+
+
+.select{width:220px; height:40px; background:#4c4c4c; border-bottom:2px solid #ccc;
+  position:relative;  margin:30px 0 50px 0; }
+.select .arrow{font-family: 'Nanum Gothic', sans-serif;  color: #fff; display:block; font-size:1em;padding:10px 0 10px 20px;}
+.select .arrow .fas{margin-left: 95px;}
+.select .aList{z-index: 10; background: #4c4c4c; opacity: .9; position:absolute;  top:-362px; left:-1px; width:222px; border-bottom:2px solid #ccc; display:none}
+
+.select .aList li{line-height:40px; }
+.select .aList li a{display:block;padding-left:20px; color: #fff; font-family: 'Nanum Gothic', sans-serif;}
+.select .aList li a:hover{ background:#F9f9f9; color:#333}
+
+
+/* 상단이동 버튼 */
+.topMove{display:block; width: 50px;
+height: 50px; background: #75ccdd; border-radius: 25px;
+position: fixed; left:50%; margin-left: 650px; 
+bottom:200px; z-index: 10;}
+.topMove i{font-size: 25px; color: #fff; display: block; text-align: center;
+margin-top: 11px; transition: all .5s;}
+.topMove:hover i{transform: scale(1.3);}
+
+
+
+
+
+
+
+
+
+
+
+
+

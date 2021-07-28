@@ -1,0 +1,175 @@
+<?
+	session_start();
+    @extract($_SESSION); 
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약:오시는길</title>
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_4content.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="../common/js/prefixfree.min.js"></script>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=00e903b95cf9e97b2cce9c8f5c10b34a"></script>
+    <script src="./js/map2.js"></script>
+
+    <!--[if IE 9]>  
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    
+
+    <div class="wrap">
+        <!-- 서브헤더영역 -->
+        <? include "../common/sub_head.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/sub1visual.jpg" alt="기업이미지">
+        </div>
+
+        <div class="sub_menu">
+            <div class="sub1">
+                <h3>동아제약</h3>
+                <p>COMPANY INTRODUCTION</p>
+            </div>
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li><a href="./sub1_2.html">연혁</a></li>
+                <li><a href="./sub1_3.html">CEO인사말</a></li>
+                <li class="current"><a href="#">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                   <span class="hidden">home</span><i class="fas fa-home"></i> &gt;동아제약 &gt; <strong>오시는 길</strong> 
+                </div>  
+                <h2>위치안내</h2>  
+            </div>
+
+            <div class="content_area">
+                <span class="hidden">위치</span><p><i class="fas fa-map-marker-alt"></i>동아제약의 연구소 및 지점 현황입니다.</p>
+                <div id="map"></div>
+                <div class="add">
+                    <h3>동아제약 본사</h3> 
+                    <dl class="address">
+                        <dt><span class="hidden">위치</span><i class="fas fa-map-marker-alt"></i>주소</dt>
+                        <dd>서울시 동대문구 천호대로 64</dd>
+                    </dl>
+                    <dl class="number">
+                        <dt><span class="hidden">전화</span><i class="fas fa-phone-alt"></i>전화</dt> 
+                        <dd>02 - 920 - 8114</dd>
+                    </dl>
+                    <dl class="subway">
+                        <dt><span class="hidden">교통</span><i class="fas fa-subway"></i>교통편</dt>
+                        <dd><span class="green">2</span> 지하철 2호선 신설동역 9번 출구 도보 10분 거리</dd>
+                        <dd><span class="blue">1</span> 지하철 1호선 신설동역 6번 출구</dd>
+                    </dl>
+                </div>
+
+                <div class="table">
+                    <h3>지점안내</h3>
+                    <h4>서울일산광역</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">서울 1, 2, 3, 4팀</th>
+                                <td>서울특별시 동대문구 무학로 25길 16</td>
+                                <td class="last">02-920-8600, 8832</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">일산, 인천팀</th>
+                                <td>경기도 고양시 일산동구 경의로 25-38</td>
+                                <td class="last">070-8636-3606</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>경기강원광역</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">안양 1, 2, 3팀</th>
+                                <td>경기도 안양시 만안구 안양로 552</td>
+                                <td class="last">070-8636-3069</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">원주팀</th>
+                                <td>강원도 원주시 헹가리1길 42-1</td>
+                                <td class="last">033-766-1420</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>중부호남광역</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">대전팀</th>
+                                <td>대전광역시 중구 어덕마을로 18</td>
+                                <td class="last">042-253-6001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">천안팀</th>
+                                <td>충청남도 천안시 서북구 불당동 1535-1 마블러스 T타워 512호</td>
+                                <td class="last">041-562-2202</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">광주팀</th>
+                                <td>광주광역시 북구 하서로322번길 24-8</td>
+                                <td class="last">062-571-2341</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전주팀</th>
+                                <td>전라북도 전주시 덕진구 유상로 44</td>
+                                <td class="last">063-212-9981</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>영남광역</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">대구 1, 2팀</th>
+                                <td>대구광역시 동구 동부로 22길 34</td>
+                                <td class="last">053-743-7511</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">경주팀</th>
+                                <td>경상북도 경주시 공단로 41</td>
+                                <td class="last">054-776-3311</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">부산 1, 2팀</th>
+                                <td>부산광역시 연제구 거제천로 270번길 16</td>
+                                <td class="last">051-804-1202</td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                
+            </div>
+
+        </article>
+
+
+
+       <!-- 서브푸터영역 -->
+       <? include "../common/sub_foot.html" ?>
+    </div>
+
+<!-- JQuery -->
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/fullnav.js"></script>
+
+</body>
+</html>

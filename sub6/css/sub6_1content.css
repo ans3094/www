@@ -1,0 +1,143 @@
+
+
+.sub_menu{width: 1200px; margin: 0 auto; position: relative;}
+.sub_menu .sub1{position: absolute; width: 250px; top: -220px; left: 50%; margin-left: -125px;}
+.sub_menu h3{font-size: 40px; color: #fff; text-align: center; font-family: 'Nanum Gothic', sans-serif;}
+.sub_menu p{font-size: 20px; color: #fff; margin: 20px 0 0 0; text-align: center; font-family: 'Roboto', sans-serif;}
+.sub_menu ul{width: 1000px; overflow: hidden; margin: 0 auto; margin-bottom: 110px; border-bottom: 1px solid #ccc;}
+.sub_menu li{float: left;   position: relative;}
+.sub_menu li a{display: block;  width: 250px; text-align: center; color: #333; font-family:'Nanum Gothic', sans-serif; 
+    font-size: 20px; padding: 20px 0; transition: all .5s;}
+.sub_menu .current a{color: #00abcd; font-weight: 700;}
+.sub_menu .current a::after{content: ""; display: block; width:250px; 
+    background: #00abcd; height: 3px; position: absolute; bottom:0; left: 0;}
+.sub_menu ul li a:hover{color: #00abcd; font-weight: 700;}
+.sub_menu ul li a::after{content: ""; display: block; width:0; 
+    background: #00abcd; height: 3px; position: absolute; bottom:0; left: 50%; transition: all .5s;}
+.sub_menu ul li:hover a::after{content: ""; display: block; width: 100%; left: 0;}   
+
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative;}
+#content .title_area .line_map{position: absolute; top: -220px; right: 0;
+color: #fff;}
+#content .title_area .line_map i{color: #fff; margin-right: 0;}
+#content .title_area h2{font-size: 58px; font-family: 'Nanum Gothic', sans-serif;
+    text-align: center; margin-bottom: 130px;}
+#content .title_area h2::after{content: ""; display: block; width: 140px; height: 5px; background: #00abcd;
+    position: absolute; top: 100px; left: 530px;}
+
+    #content .content_area{position: relative;}
+#content .content_area .sub_text{font-size: 26px; font-family: 'Nanum Gothic', sans-serif;
+text-align: center; margin-bottom: 110px;}
+#content .content_area h3{font-size: 46px; font-family: 'Nanum Gothic', sans-serif; 
+text-align: center; margin-bottom: 110px;}
+#content .content_area h3::before{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:160px; left: 830px;}
+#content .content_area h3::after{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:160px; right: 830px;}
+#content .content_area span{color: #00abcd;}
+    
+#content .content_area ol{overflow: hidden; margin-bottom: 110px;}
+#content .content_area li{float: left; margin-right: 120px; position: relative;}
+#content .content_area .last{margin-right: 0;}
+#content .content_area li span{display: block; font-size: 20px; font-weight: 900; 
+font-family: 'Nanum Gothic', sans-serif; text-align: center;
+margin-bottom: 30px;}
+#content .content_area li img{width: 100px; height: 100px; margin-bottom: 30px;}
+#content .content_area li p{text-align: center; font-weight: bold; font-size: 20px; font-family: 'Nanum Gothic', sans-serif; }
+#content .content_area li i{color: #ccc; font-size: 30px; position: absolute; top: 100px; right: -65px;}
+
+@keyframes ani_arrow{
+    from{
+        color: #f3f3f3;
+    }
+    50%{
+        color: #00abcd;
+    }
+    to{
+        color: #f3f3f3;
+    }
+}
+#content .content_area ol .icon1 i{
+    animation-name: ani_arrow;
+    animation-delay: .5s;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: backwards;
+animation-play-state: running;}
+#content .content_area ol .icon2 i{
+    animation-name: ani_arrow;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: backwards;
+animation-play-state: running;}
+#content .content_area ol .icon3 i{
+    animation-name: ani_arrow;
+    animation-delay: 1.5s;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: backwards;
+animation-play-state: running;}
+#content .content_area ol .icon4 i{
+    animation-name: ani_arrow;
+    animation-delay: 2s;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: backwards;
+animation-play-state: running;}
+#content .content_area ol .icon5 i{
+    animation-name: ani_arrow;
+    animation-delay: 2.5s;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: backwards;
+animation-play-state: running;}
+
+#content .content_area .call{position: relative;}
+#content .content_area .call h3::before{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:15px; left: 730px;}
+#content .content_area .call h3::after{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:15px; right: 730px;}
+#content .content_area .mail{position: relative;}
+#content .content_area .mail h3::before{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:15px; left: 730px;}
+#content .content_area .mail h3::after{content: ""; display: block; width: 8px; height: 36px; background: #00abcd;
+position: absolute; top:15px; right: 730px;}
+#content .content_area p{font-family: 'Nanum Gothic', sans-serif; }
+#content .content_area h4{font-size: 32px; font-family: 'Nanum Gothic', sans-serif; 
+margin-bottom: 80px; text-align: center;}
+#content .content_area .call img{width: 80px; height: 80px; display: block;
+margin: 0 auto; margin-bottom: 80px;}
+#content .content_area .call strong{font-size: 20px; font-family: 'Nanum Gothic', sans-serif;
+margin-bottom: 20px; display: block;}
+#content .content_area .call .box{border-top: 5px solid #00abcd; border-radius: 0 0 30px 30px;
+    padding: 50px 50px; margin-bottom: 80px; box-shadow: 2px 2px 5px 2px #ccc;
+ margin-bottom: 110px;}
+
+
+#content .content_area .mail img{width: 80px; height: 80px; display: block;
+margin: 0 auto; margin-bottom: 80px;}
+#content .content_area .mail .box{border-top: 5px solid #00abcd; border-radius: 0 0 30px 30px;
+    padding: 50px 50px; margin-bottom: 80px; box-shadow: 2px 2px 5px 2px #ccc;
+ margin-bottom: 150px;}
+ #content .content_area .mail p{font-family: 'Nanum Gothic', sans-serif;
+margin-bottom: 20px}
+#content .content_area .mail .box .last{margin-bottom: 0;}
+
+
+
+
+
+

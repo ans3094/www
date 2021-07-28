@@ -1,0 +1,32 @@
+#content .content_area{}
+#content .content_area p{font-size: 26px; font-family: 'Nanum Gothic', sans-serif;
+margin-bottom: 100px; text-align: center;}
+#content .content_area i{font-size: 26px; color: #00abcd; margin-right: 20px;}
+#map{margin-bottom: 100px; margin-left: 100px; width:1000px; height:500px; border: 3px solid #ccc;}
+.content_area .add{width: 1000px; margin-left: 100px; overflow: hidden;
+position: relative; border-bottom: 1px solid #ccc; margin-bottom: 150px;}
+.content_area h3{font-size: 30px; font-family: 'Nanum Gothic', sans-serif;
+margin-bottom: 50px;}
+.content_area h3::after{content: ""; display: block; background: #00abcd;
+ width: 190px; height: 3px; margin-top: 10px;}
+.content_area dl{ float: left; margin-right: 150px; font-family: 'Nanum Gothic', sans-serif;}
+.content_area .address::after{content: ""; display: block; width: 1px; height: 60px;
+background: #ccc; margin-left: 285px; bottom: 30px; position: absolute;}
+.content_area .number::after{content: ""; display: block; width: 1px; height: 60px;
+    background: #ccc; margin-left: 185px; bottom: 30px; position: absolute;}
+.content_area dt{font-weight: bold; margin-bottom: 20px;}
+#content .content_area .address dt{margin-bottom: 30px;}
+#content .content_area .number dt{margin-bottom: 30px;}
+#content .content_area dd{margin-bottom: 5px;}
+#content .add i{font-size: 18px; color: #00abcd;}
+#content .content_area .subway{margin-right: 0; margin-bottom: 20px;}
+#content .add .subway .green{padding: 0 3px; background: #32ae56; color: #fff; border-radius: 10px;}
+#content .add .subway .blue{ padding: 0 3px; background: #345bba; color: #fff; border-radius: 10px;}
+#content .content_area .table{position: relative; width: 1000px; margin-left: 100px; margin-bottom: 150px;}
+#content .content_area .table h3::after{content: ""; display: block; background: #00abcd;
+    width: 120px; height: 3px; margin-top: 10px;}
+#content .content_area .table h4{margin-bottom: 20px; font-size: 22px; color: #00abcd; font-family: 'Nanum Gothic', sans-serif;}
+#content .content_area table{font-family: 'Nanum Gothic', sans-serif; margin-bottom: 50px; width: 1000px; border-top: 1px solid #ccc;}
+#content .content_area table td{border-bottom: 1px solid #f6f6f6; padding: 20px;}
+#content .content_area table th{background: #e5f6fa; border-bottom: 1px solid #f6f6f6; padding: 20px; width: 200px;}
+#content .content_area table .last{width: 150px;}

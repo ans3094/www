@@ -1,0 +1,35 @@
+#content{width: 900px; margin: 0 auto; padding-top: 50px;}  
+
+    h1{margin-top: 50px; padding-bottom: 60px; position: relative;}
+    h1::after{content: ''; width: 1000px; height: 5px; border-radius: 1px; background: #00abcd; position: absolute;
+    bottom: 0; left: 50%; margin-left: -500px;}
+    .logo{display: block;
+        margin: 0 auto;
+    width: 150px;
+    height: 120px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+    text-indent: -999px;
+    overflow: hidden;}
+    .member_tab{padding: 30px 0;border-top: 1px solid #333}
+    .member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+    .member_tab a.on{color: #000;border-bottom: 2px solid #000;font-weight: bold}
+    .member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #000;font-weight: bold}
+
+    .join{text-align: left; }
+    .join h4{font-size: 20px;margin-top: 30px; font-family: 'Nanum Gothic', sans-serif;} 
+    .join .policy{line-height: 1.5em; font-family: 'Nanum Gothic', sans-serif; padding: 10px;overflow-y: scroll;height: 100px;margin: 20px 0;border: 1px solid #ddd}
+    .join .button{font-family: 'Nanum Gothic', sans-serif; text-align: center;margin-top: 30px}
+    .join .button .ok,.join .button button{font-family: 'Nanum Gothic', sans-serif; display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none; background: #00abcd;color: #fff;font-size: 14px;cursor: pointer}
+    .join .button .cancel{margin-bottom: 100px; font-family: 'Nanum Gothic', sans-serif; display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
+    .join .check{font-family: 'Nanum Gothic', sans-serif; margin-bottom: 40px;}
+    .join .allcheck{text-align: center; margin-bottom: 40px; font-family: 'Nanum Gothic', sans-serif;display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border-radius: 5px; border: none;background: #ccc;color: #fff;font-size: 14px;cursor: pointer}
+
+
+
+
+
+
+
+
+
